@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchStreams } from '../../actions';
 import { Link } from 'react-router-dom';
+import { startAsyncValidation } from 'redux-form';
 
 export class StreamList extends Component {
 	componentDidMount() {
@@ -31,6 +32,10 @@ export class StreamList extends Component {
 
 	renderList() {
 		return this.props.streams.map((stream) => {
+			if (this.props.currentUserId !== stream.userId) {
+				return null;
+			}
+
 			return (
 				<div className="item" key={stream.id}>
 					{this.renderAdmin(stream)}
