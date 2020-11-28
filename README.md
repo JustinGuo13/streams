@@ -1,7 +1,6 @@
 Streams
 
 Created a Twitch clone using CRUD operations implemented in React.
-Demo: youtu.be/3ibkh_eowtq
 ![create](https://user-images.githubusercontent.com/47575608/100489544-90c01800-30c9-11eb-8125-670bfa527b0f.PNG)
 ![create2](https://user-images.githubusercontent.com/47575608/100489545-9158ae80-30c9-11eb-9075-fa3133ab7ae0.PNG)
 ![edit](https://user-images.githubusercontent.com/47575608/100489549-94539f00-30c9-11eb-8ddb-821a30799ed4.PNG)
